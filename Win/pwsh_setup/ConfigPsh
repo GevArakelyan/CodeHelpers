@@ -1,0 +1,16 @@
+<!-- Download and intall CascadiaCode.zip(Cascaydia Cove Nerd Font) -->
+https://www.nerdfonts.com/font-downloads
+
+
+winget install JanDeDobbeleer.OhMyPosh
+
+<!-- modify Microsoft.PowerShell_profile.ps1 | change file path C:\repos\ohmyposhv3-v2.json -->
+<!-- cp Microsoft.PowerShell_profile.ps1 to your $profile -->
+
+<!-- install psreadline latest -->
+Install-Module PSReadLine -AllowPrerelease -Force
+
+<!-- Install module for showing icons in terminal -->
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+

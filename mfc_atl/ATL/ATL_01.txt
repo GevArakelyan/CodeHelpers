@@ -1,0 +1,8 @@
+Tutorial 7 : Creating ActiveX COM Controls using VC++ MFC and ATL  
+How to create a ActiveX COM control and use it from C# windows forms application. 
+https://www.youtube.com/watch?v=HErtQt5QZbs
+
+
+Create COM DLL using ATL
+Has interface with properties and methods.
+https://www.youtube.com/watch?v=v4FoL1E7AGQ&t=12s

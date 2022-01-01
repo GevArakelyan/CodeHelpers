@@ -1,0 +1,4 @@
+
+Modern C++ for the Windows Runtime: Creating a Component
+https://www.youtube.com/watch?v=ZrbBIrgq9F4&list=PLAwDRnP3h7Yh-fUYFAq9k2wVb81dA5BYP&index=7
+Above example shows how to write c++ Component which can be used by c# and c++ apps.

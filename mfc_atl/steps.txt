@@ -1,0 +1,18 @@
+MFC upgrade notes:
+https://devblogs.microsoft.com/cppblog/mfc-support-for-mbcs-deprecated-in-visual-studio-2013/
+basically you should add NO_WARN_MBCS_MFC_DEPRECATION to build definitions.
+also download mbcs dlls or switch to unicode.
+
+Upgrading C++ code
+https://docs.microsoft.com/en-us/cpp/porting/ide-tools-for-upgrading-code?view=msvc-170
+
+
+Here you can find how to upgrade mfc and host xaml controls.
+https://techcommunity.microsoft.com/t5/windows-dev-appconsult/bg-p/WindowsDevAppConsult
+
+MFC to UWP upgrade example source code:
+https://github.com/freistli/ModernizeApp.git
+
+
+Migrating MFC application to Qt
+https://www.youtube.com/watch?v=-q7KAVEW45U

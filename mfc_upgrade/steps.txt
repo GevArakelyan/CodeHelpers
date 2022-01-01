@@ -1,0 +1,5 @@
+MFC upgrade notes:
+https://devblogs.microsoft.com/cppblog/mfc-support-for-mbcs-deprecated-in-visual-studio-2013/
+basically you should add NO_WARN_MBCS_MFC_DEPRECATION to build definitions.
+also download mbcs dlls or switch to unicode.
+
