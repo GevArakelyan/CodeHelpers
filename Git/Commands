@@ -46,7 +46,6 @@ git log main..feature/uploader
 
 other example
 git log origin/main..main
-<<<<<<< HEAD
 --------------------------
 Rename branch
 git branch -m $BRANCH $NEW_BRANCH
@@ -59,16 +58,15 @@ Uploading the local branch for the first time
 git push -u origin $BRANCH
 
 --------------------------
-<<<<<<< HEAD
+
 to add submodule
 git submodule add remote_url_to_submodule
-=======
+
 Rebasing commits
 git rebase -i HEAD~2 # will rebase last 2 commits
 
 To edit last commit message with amend
 git commit --amend -m "new message"
->>>>>>> d86990b (How to rebase and ammend:)
 
 to update submodule
 git submodule update
@@ -96,13 +94,7 @@ git submodule update --remote
 
 git submodule update <submodule>
 
-<<<<<<< HEAD
-=======
->>>>>>> 2b5402d (small incremental change)
-=======
 to run git command foreach submodule
 git submodule foreach git <command>
 example:
 git submodule foreach git pull origin master
---------------------------
->>>>>>> 427b212 (sql, git and mfc)
