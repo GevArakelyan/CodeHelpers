@@ -2,13 +2,10 @@
 
 use Sample1
 go
-create table Toys
-([name] varchar(100),
-price int)
+create table Toys ([name] varchar(100), price int)
 go
 
-insert into Toys
-values ('Car', 99), ('Bird',100), ('Bike', 100)
+insert into Toys values ('Car', 99), ('Bird',100), ('Bike', 100)
 go
 
 begin transaction

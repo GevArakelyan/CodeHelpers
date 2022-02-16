@@ -1,3 +1,6 @@
 [submodule "mfc_atl/VCSamples"]
 	path = mfc_atl/VCSamples
 	url = https://github.com/GevArakelyan/VCSamples.git
+[submodule "Qt"]
+	path = Qt
+	url = https://github.com/GevArakelyan/Qt.git

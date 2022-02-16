@@ -1,2 +1,0 @@
-SDRAW - A drawing application for Desktop, written in C++ Qt: https://github.com/Broentech/sdraw. LGPL
-https://www.youtube.com/watch?v=A5Nrs-jr-AM
