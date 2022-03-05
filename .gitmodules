@@ -4,3 +4,6 @@
 [submodule "Qt"]
 	path = Qt
 	url = https://github.com/GevArakelyan/Qt.git
+[submodule "Sql"]
+	path = Sql
+	url = https://github.com/GevArakelyan/Sql.git
