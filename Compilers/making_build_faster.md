@@ -23,3 +23,7 @@ Most programs can be linked incrementally. However, some changes are too great, 
 - /ORDER is selected
 
 /INCREMENTAL is implied when /DEBUG is specified
+--------
+https://devblogs.microsoft.com/cppblog/visual-studio-2017-throughput-improvements-and-advice/
+And remember, you can use /d2cgsummary to cl.exe or /d2:-cgsummary to the linker to help diagnose code generation throughput issues. This includes info about the inliner reader cache discussed above. And for the toolset at large, pass /Bt to cl.exe and it’ll break down the time spent in each phase (front end, back end, and linker). The linker itself will output its time breakdown when you pass it /time+, including how much time is spent during ICF.
+---------
