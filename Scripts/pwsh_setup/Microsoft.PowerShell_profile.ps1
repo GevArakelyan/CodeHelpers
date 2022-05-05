@@ -6,18 +6,16 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 
-Import-Module -Name Terminal-Icons
+#Import-Module -Name Terminal-Icons
 
 #oh-my-posh --init --shell pwsh --config "D:\Dropbox\poshv3.json" | Invoke-Expression
 # oh-my-posh --init --shell pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
-oh-my-posh --init --shell pwsh --config "C:\repos\ohmyposhv3-v2.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "C:\repos\CodeHelpers\Scripts\pwsh_setup\ohmyposhv3.json" | Invoke-Expression
 
 # My commands
 function graph() { git log --all --graph --decorate --oneline --boundary --color }
 
 # End of my commands
-
-Import-Module -Name Terminal-Icons
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
