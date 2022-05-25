@@ -11,6 +11,7 @@ if ($host.Name -eq 'ConsoleHost')
 #oh-my-posh --init --shell pwsh --config "D:\Dropbox\poshv3.json" | Invoke-Expression
 # oh-my-posh --init --shell pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
 oh-my-posh --init --shell pwsh --config "C:\repos\CodeHelpers\Scripts\pwsh_setup\ohmyposhv3.json" | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH\jandedobbeleer.omp.json | Invoke-Expression
 
 # My commands
 function graph() { git log --all --graph --decorate --oneline --boundary --color }
