@@ -1,3 +1,7 @@
+### To find all dependencies:
+dumpbin /dependents MyApp.exe
+
+
 ## You can embed natvis files into your .pdbs.
 
 
