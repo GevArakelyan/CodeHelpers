@@ -36,3 +36,78 @@ void gun(std::unique_ptr<int> p);
 void fun2(std::unique_ptr<int> p) { gun(std::move(p)); }
 ```
 
+-------
+### Calling conventions:
+For visual c++ compiler calling conventions are important mostly for x86 architecture.
+Windows API in general uses __stdcall calling convention, because it produces less code size.
+And smaller code generally means faster code.
+
+```
+File library.h 
+#pragma once
+void cluck();
+---
+File library.cpp
+#include "library.h"
+#include <stdio.h>
+
+void cluck() {
+   printf("click\n");
+}
+---
+File library.def
+EXPORT
+cluck
+---
+Now let's produce library.dll
+
+```
+cl /W4 /LD Library.cpp Library.def 
+---
+
+File Application.cpp
+#include "library.h"
+
+int main() {
+   cluck();
+}
+
+---
+Let's link and run Application
+cl /W4 Application.cpp /link Library.lib
+---
+
+```
+to look at Application dependencies: Use Dependency Walker
+depends.exe Application.exe
+
+-----------
+Now let's use above function from C#
+File managed.cs
+
+using System.Runtime.InteropServices;
+
+class Application {
+   static void Main() {
+      cluck();
+   }
+
+   [DllImport("library.dll")]
+   static extern void cluck();
+}
+---
+csc managed.cs
+managed.exe | this may not work because csc is by defualt will produce for any cpu.
+---
+Too see what processor architecture is used:
+
+```
+echo %PROCESSOR_ARCHITECTURE%
+```
+And too see what processor current c++ compiler is targeting:
+```
+cl
+```
+
+To create x86 app
+csc /platform:x86 managed.cs
