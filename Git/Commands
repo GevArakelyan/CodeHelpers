@@ -58,6 +58,14 @@ Uploading the local branch for the first time
 git push -u origin $BRANCH
 
 --------------------------
+To clean and get specific commit
+git reset --soft commitHash
+above command won't delete the other commits but will stage them
+git reset --hard commitHash | will delete the other commits, but will leave untracked files unchanged.
+
+And to clean untracked files and folders
+git clean -df
+--------------------------
 
 to add submodule
 git submodule add remote_url_to_submodule
