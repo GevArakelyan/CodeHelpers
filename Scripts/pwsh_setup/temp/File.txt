@@ -1,0 +1,7 @@
+findstr /c:"text" /r:"text" filename
+class A : public std::unary_function< _SubscriberItem, bool >
+{
+
+};
+
+// 
