@@ -106,3 +106,11 @@ to run git command foreach submodule
 git submodule foreach git <command>
 example:
 git submodule foreach git pull origin master
+--------------------------
+
+## To change or remove remote origin:
+```
+git remote set-url origin <new_remote_url>
+
+git remote remove origin
+```

@@ -35,7 +35,13 @@ Past below code at godbold and compile with above flags. You will see how little
 void gun(std::unique_ptr<int> p);
 void fun2(std::unique_ptr<int> p) { gun(std::move(p)); }
 ```
-
+-------
+## Performance benfits from function alignment: people have seen up to 48% perf increase.
+If you're using clang, then try below options: 
+```
+*-mllvm-align-all-functions=5
+** -mllvm-allign-all-blocks=5
+```
 -------
 ### Calling conventions:
 For visual c++ compiler calling conventions are important mostly for x86 architecture.
